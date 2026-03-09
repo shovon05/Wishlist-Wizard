@@ -121,25 +121,45 @@ export default function Home() {
 
       <button onClick={generateWishlist}>Generate Wishlist</button>
 
-      <h2>Recommended Courses</h2>
+      <h2>Recommended Course Sets</h2>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
-        {recommendations.map((course: any) => (
-          <div
-            key={course.code}
-            style={{
-              background: "rgba(30,41,59,0.7)",
-              padding: "20px",
-              borderRadius: "12px",
-              border: "1px solid rgba(255,255,255,0.1)"
-            }}
-          >
-            <h3>{course.code}</h3>
-            <p>{course.name}</p>
-            <p>Credits: {course.credits}</p>
-            <p>Difficulty: {course.difficulty}</p>
-          </div>
-        ))}
+        {recommendations.map((set: any, index: number) => {
+
+          const totalCredits = set.reduce((sum: number, c: any) => sum + c.credits, 0);
+
+          const difficultyScore = set.reduce((sum: number, c: any) => {
+            if (c.difficulty === "Easy") return sum + 1;
+            if (c.difficulty === "Balanced") return sum + 2;
+            if (c.difficulty === "Hard") return sum + 3;
+            return sum;
+          }, 0);
+
+          return (
+            <div
+              key={index}
+              style={{
+                background: "rgba(30,41,59,0.7)",
+                padding: "20px",
+                borderRadius: "12px",
+                border: "1px solid rgba(255,255,255,0.1)"
+              }}
+            >
+              <h3>Option {index + 1}</h3>
+              <p>Total Credits: {totalCredits}</p>
+              <p>Semester Load: {difficultyScore} / 10</p>
+
+              {set.map((course: any) => (
+                <div key={course.code} style={{ marginBottom: "10px" }}>
+                  <strong>{course.code}</strong> — {course.name}
+                  <div style={{ fontSize: "14px", opacity: 0.8 }}>
+                    Credits: {course.credits} | Difficulty: {course.difficulty}
+                  </div>
+                </div>
+              ))}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
