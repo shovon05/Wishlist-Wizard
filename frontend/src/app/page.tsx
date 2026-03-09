@@ -123,13 +123,24 @@ export default function Home() {
 
       <h2>Recommended Courses</h2>
 
-      <ul>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
         {recommendations.map((course: any) => (
-          <li key={course.code}>
-            {course.code} - {course.name}
-          </li>
+          <div
+            key={course.code}
+            style={{
+              background: "rgba(30,41,59,0.7)",
+              padding: "20px",
+              borderRadius: "12px",
+              border: "1px solid rgba(255,255,255,0.1)"
+            }}
+          >
+            <h3>{course.code}</h3>
+            <p>{course.name}</p>
+            <p>Credits: {course.credits}</p>
+            <p>Difficulty: {course.difficulty}</p>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
