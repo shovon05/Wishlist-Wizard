@@ -2,6 +2,16 @@ const express = require('express');
 const router = express.Router();
 const db = require('../config/db');
 
+router.get('/courses', async (req, res) => {
+  try {
+    const result = await db.query('SELECT code, name FROM courses ORDER BY code');
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Error fetching courses:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 router.post('/', async (req, res) => {
   try {
     const { cgpa, completedCourses, repeatCourses, difficulty, maxCourses } = req.body;
