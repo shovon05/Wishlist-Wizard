@@ -26,6 +26,27 @@ export default function Home() {
   };
 
   const generateWishlist = async () => {
+
+    if (!cgpa) {
+      alert("Please enter your CGPA.");
+      return;
+    }
+
+    if (parseFloat(cgpa) < 0 || parseFloat(cgpa) > 4) {
+      alert("CGPA must be between 0 and 4.");
+      return;
+    }
+
+    if (!maxCourses || maxCourses <= 0) {
+      alert("Please enter maximum courses.");
+      return;
+    }
+
+    if (completedCourses.length === 0) {
+      alert("Please select at least one completed course.");
+      return;
+    }
+
     const response = await fetch(
       "http://localhost:3001/api/recommendations",
       {
@@ -93,6 +114,9 @@ export default function Home() {
         <label>CGPA:</label>
         <input
           type="number"
+          min="0"
+          max="4"
+          step="0.01"
           value={cgpa}
           onChange={(e) => setCgpa(e.target.value)}
         />
@@ -114,12 +138,28 @@ export default function Home() {
         <label>Max Courses:</label>
         <input
           type="number"
+          min="1"
+          max="5"
           value={maxCourses}
           onChange={(e) => setMaxCourses(Number(e.target.value))}
         />
       </div>
 
-      <button onClick={generateWishlist}>Generate Wishlist</button>
+      <button
+        onClick={generateWishlist}
+        disabled={!cgpa}
+        style={{
+          marginTop: "10px",
+          padding: "10px 20px",
+          background: !cgpa ? "gray" : "#3b82f6",
+          border: "none",
+          borderRadius: "6px",
+          color: "white",
+          cursor: !cgpa ? "not-allowed" : "pointer"
+        }}
+      >
+        Generate Wishlist
+      </button>
 
       <h2>Recommended Course Sets</h2>
 
