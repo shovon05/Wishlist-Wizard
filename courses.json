@@ -894,5 +894,58 @@
     "hard_prerequisites": [],
     "soft_prerequisites": [],
     "type": "cod"
+  },
+  {
+    "code": "MAT110",
+    "name": "MATH I: Differential Calculus and Coordinate Geometry",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "MAT120",
+    "name": "MATH II: Integral Calculus and Differential Equations",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "MAT110"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "MAT216",
+    "name": "MATH IV: Linear Algebra and Fourier Analysis",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "MAT120"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "MAT215",
+    "name": "MATH III: Complex Variables and Laplace Transformations",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "MAT216"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "PHY112",
+    "name": "Principles of Physics II",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "PHY111"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
   }
 ]

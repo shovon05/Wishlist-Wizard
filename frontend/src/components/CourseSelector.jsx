@@ -4,8 +4,9 @@ export default function CourseSelector({ title, options, selected, onChange }) {
     const [isOpen, setIsOpen] = useState(false);
     const [search, setSearch] = useState('');
 
+    const normalizedSearch = search.toLowerCase().replace(/\s+/g, '');
     const filteredOptions = options.filter(opt =>
-        opt.code.toLowerCase().includes(search.toLowerCase()) ||
+        opt.code.toLowerCase().replace(/\s+/g, '').includes(normalizedSearch) ||
         opt.name.toLowerCase().includes(search.toLowerCase())
     );
 
