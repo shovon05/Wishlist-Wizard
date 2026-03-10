@@ -1,0 +1,898 @@
+[
+  {
+    "code": "CSE110",
+    "name": "Programming Language I",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE111",
+    "name": "Programming Language 2",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [
+      "CSE110"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE220",
+    "name": "Data Structure",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE111"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE221",
+    "name": "Algorithm Analysis & Design",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE220"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE230",
+    "name": "Discrete Mathematics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE250",
+    "name": "Circuits and Electronics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [
+      "PHY112"
+    ],
+    "type": "core"
+  },
+  {
+    "code": "CSE251",
+    "name": "Electronic Devices and Circuits",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE250"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE260",
+    "name": "Digital Logic Design",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE251"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE320",
+    "name": "Data Communications",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE321",
+    "name": "Operating Systems",
+    "credits": 3,
+    "difficulty": "Hard",
+    "hard_prerequisites": [
+      "CSE221"
+    ],
+    "soft_prerequisites": [
+      "CSE340"
+    ],
+    "type": "core"
+  },
+  {
+    "code": "CSE330",
+    "name": "Numerical Methods",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "MAT216"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE331",
+    "name": "Automata and Computability",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE221"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE340",
+    "name": "Computer Architecture",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE260"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE341",
+    "name": "Microprocessors",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [
+      "CSE340"
+    ],
+    "type": "core"
+  },
+  {
+    "code": "CSE350",
+    "name": "Digital Electronics and Pulse Techniques",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE251"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE360",
+    "name": "Computer Interfacing",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE341"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE370",
+    "name": "Database",
+    "credits": 3,
+    "difficulty": "Hard",
+    "hard_prerequisites": [
+      "CSE221"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE400",
+    "name": "Final Year Design Project",
+    "credits": 4,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE420",
+    "name": "Compiler Design",
+    "credits": 3,
+    "difficulty": "Hard",
+    "hard_prerequisites": [
+      "CSE321",
+      "CSE331",
+      "CSE340"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE421",
+    "name": "Computer Networks",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [
+      "CSE320"
+    ],
+    "type": "core"
+  },
+  {
+    "code": "CSE422",
+    "name": "Artificial Intelligence",
+    "credits": 3,
+    "difficulty": "Hard",
+    "hard_prerequisites": [
+      "CSE221"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE423",
+    "name": "Computer Graphics",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "MAT216"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE460",
+    "name": "VLSI Design",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE260"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE461",
+    "name": "Introduction to Robotics",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE260",
+      "CSE341",
+      "CSE360"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE470",
+    "name": "Software Engineering",
+    "credits": 3,
+    "difficulty": "Hard",
+    "hard_prerequisites": [
+      "CSE370"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "CSE471",
+    "name": "System Analysis and Design",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [
+      "CSE370"
+    ],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "ENG101",
+    "name": "English Fundamentals",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG102",
+    "name": "Composition I",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG103",
+    "name": "Advanced Writing Skills and Presentation",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BIO101",
+    "name": "Introduction to Biology",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CHE101",
+    "name": "Introduction to Chemistry",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CSE101",
+    "name": "Introduction to Computer Science",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "core"
+  },
+  {
+    "code": "ENV103",
+    "name": "Elements of Environmental Science",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "MAT101",
+    "name": "Fundamentals of Mathematics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "MAT110",
+    "name": "MATH I: Differential Calculus and Co-ordinate Geometry",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "PHY101",
+    "name": "Introduction to Physics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "PHY111",
+    "name": "Principles of Physics I",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "STA101",
+    "name": "Introduction to Statistics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "STA201",
+    "name": "Elements of Statistics and Probabilities",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BNG103",
+    "name": "Bangla Language and Literature",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG110",
+    "name": "English for Life",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG113",
+    "name": "Introduction to English Poetry",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG114",
+    "name": "Introduction to English Drama",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG115",
+    "name": "Introduction English Prose",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ENG333",
+    "name": "Globalization and the Media",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HST102",
+    "name": "The Modern World",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HST103",
+    "name": "History of Bangladesh",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HST104",
+    "name": "Global History Lab \u2013 A History of World since 1300",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM101",
+    "name": "World Civilization & Culture",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM102",
+    "name": "Introduction to Philosophy",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM103",
+    "name": "Ethics and Culture",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM207",
+    "name": "Narratives of Truth and Lies",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM210",
+    "name": "Streaming Media Cultures",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "HUM301",
+    "name": "In the Archives",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ANT101",
+    "name": "Introduction to Anthropology",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ANT342",
+    "name": "Body and Society",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ANT351",
+    "name": "Gender & Development",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BUS102",
+    "name": "Business \u2013 Basics, Ethics and Environment",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BUS201",
+    "name": "Business and Human Communication",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BUS333",
+    "name": "Social Entrepreneurship Practicum",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BUS335",
+    "name": "Sustainable Development and Social Enterprise",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "DEV104",
+    "name": "Foundations of International Development",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "DEV201",
+    "name": "Health, Culture and Development",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ECO101",
+    "name": "Introduction to Microeconomics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ECO102",
+    "name": "Introduction to Macroeconomics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "ECO105",
+    "name": "Introduction to Economics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "EMB101",
+    "name": "Emergence of Bangladesh",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL101",
+    "name": "Introduction to Political Science",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL102",
+    "name": "Comparative Governance",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL103",
+    "name": "International Relations and Global Politics",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL201",
+    "name": "Introduction to Civic Engagement",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL202",
+    "name": "Foundations in Public Policy",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL203",
+    "name": "Political Theory",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "POL210",
+    "name": "Youth and Global Movement",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "PSY101",
+    "name": "Introduction to Psychology",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "PSY102",
+    "name": "Understanding the Human Minds",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "SOC101",
+    "name": "Introduction to Sociology",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "SOC201",
+    "name": "Social Inequality",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BU201",
+    "name": "Community Engagement and Action",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST201",
+    "name": "Luxury and Oppression in a Globalized World (of Perfumes)",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST204",
+    "name": "Communication for Social Change",
+    "credits": 3,
+    "difficulty": "Easy",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST301",
+    "name": "For the Love of Food",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST302",
+    "name": "The Pursuit of Wellbeing",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST303",
+    "name": "Law for Life, Peace and Justice",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST304",
+    "name": "Documentary Film: Theory and Practice",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST305",
+    "name": "Borders and Beyond: Past and Future",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST306",
+    "name": "Ethical Leadership",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST307",
+    "name": "Art, Community and the Future",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST308",
+    "name": "Social Dimensions of Faith and Development",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST309",
+    "name": "Global Citizenship",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST310",
+    "name": "Social Cohesion and Peace Building",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST314",
+    "name": "Visual Storytelling: Understanding Society through Documentary Film",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "CST333",
+    "name": "Personal Finance for Sustainable Economic Wellbeing",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  },
+  {
+    "code": "BUS334",
+    "name": "Social Intrapreneurship Practicum \u2013 Leading Change",
+    "credits": 3,
+    "difficulty": "Balanced",
+    "hard_prerequisites": [],
+    "soft_prerequisites": [],
+    "type": "cod"
+  }
+]

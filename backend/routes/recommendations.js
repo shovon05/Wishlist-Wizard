@@ -28,6 +28,14 @@ router.post('/', async (req, res) => {
     const completedSet = new Set(completedCourses || []);
     const repeatSet = new Set(repeatCourses || []);
 
+    // Fetch prerequisite mapping
+    const prereqResult = await db.query('SELECT course_code, prerequisite_code FROM hard_prerequisites');
+    const prereqMap = {};
+    prereqResult.rows.forEach(row => {
+      if (!prereqMap[row.course_code]) prereqMap[row.course_code] = [];
+      prereqMap[row.course_code].push(row.prerequisite_code);
+    });
+
     // 2. Filter out completed courses, but keep repeat courses
     let eligibleCourses = courses.filter(course => {
       // If course is in repeat set, always keep it
@@ -37,12 +45,11 @@ router.post('/', async (req, res) => {
       return true;
     });
 
-    // 3. Filter by Prerequisites (very basic logic for now: must have all completed)
-    // For simplicity, we assume prerequisites in DB is a comma-separated list of course codes
+    // 3. Filter by Prerequisites
     eligibleCourses = eligibleCourses.filter(course => {
-      if (!course.prerequisites) return true;
+      const reqs = prereqMap[course.code];
+      if (!reqs || reqs.length === 0) return true;
 
-      const reqs = course.prerequisites.split(',').map(r => r.trim());
       // A student must have completed all prerequisites to take the course
       return reqs.every(reqCode => completedSet.has(reqCode));
     });
